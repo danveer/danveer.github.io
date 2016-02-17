@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title>Software</title>
+
+<xmp theme="united" style="display:none;">
+# Architectures
+
+## Service-oriented architectures (SOA)
+
+* What?
+	* decomposition of a system into autonomous units of responsibility
+	* essentially API exposing functionality
+	* traditionally done with SOAP
+
+## Microservices
+
+* What?
+	* architectural style - SOA 2.0
+	* complex applications are composed of small autonomous processes communicating with each other using language agnostic APIs
+	* services are small and dedicated to do a single task
+		* e.g. created around features or departments
+	* autonomous
+		* no shared implementation, it's own database
+	* loosely coupled
+		* can be implemented in any language or platform
+* Pros?
+	* easier to maintain
+	* easier to version
+		* can just stand up a new service along side existing one
+	* each can use own technology stack
+	* failure isolation
+		* easily scaled, queues
+	* observable
+		* as individually hosted, can see CPU + memory usage
+	* each UI element has its own microservice
+		* amazon does this, so page can still load
+	* separate deployment
+		* no monolith, easier to test
+* Cons?
+	* duplicated data, each service has its own data
+	* duplicated business logic / code in each service
+
+
+
+</xmp>
+
+<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+</html>
